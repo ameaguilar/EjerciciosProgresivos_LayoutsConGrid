@@ -1,0 +1,21 @@
+.contenedor {
+    display: grid;
+    grid-template-columns: 150px 150px 150px; /* tres columnas*/ 
+    gap: 2px;
+}
+
+.item{
+    
+    padding: 5px;                /* padding + border + margin = blox model*/
+    border: 2px solid #333;
+    margin: 0px;
+
+    color: white;
+    justify-items: center;
+    background-color: rgb(71, 81, 84);
+}
+
+.item:hover {
+    background-color: steelblue;
+    color: white;
+}

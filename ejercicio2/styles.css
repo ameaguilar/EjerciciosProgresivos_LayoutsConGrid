@@ -1,0 +1,17 @@
+.contenedor1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* dos columnas*/
+    gap: 10px;
+}
+
+.contenedor2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* tres columnas*/
+    gap: 10px;
+}
+
+.contenedor3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* cuatro columnas*/
+    gap: 10px;
+}

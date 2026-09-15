@@ -1,0 +1,29 @@
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: 100px 50px;
+}
+
+.card {
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.destacada {
+    grid-column: span 4;
+}
+
+.card2 {
+    grid-column: span 2;
+}
+
+.card3 {
+    grid-column: span 2;
+}
+
+.card4 {
+    grid-column: span 4;
+}
