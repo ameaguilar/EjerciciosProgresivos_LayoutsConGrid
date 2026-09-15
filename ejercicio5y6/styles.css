@@ -1,18 +1,19 @@
 .pagina{
-    display: grid;
-    grid-template-columns: 200px 1fr;
+    display: grid;                       /*arreglo grid */
+    grid-template-columns: 200px 100px;    /* dos columnas con esos anchos respectivamente*/
+    
 
-    grid-template-areas:  display: grid;
-    grid-template-columns: 200px 1fr;
-
-    grid-template-areas: 
-    "header header"
+    grid-template-areas:                 /*distribución*/
+        "header header"
         "menu contenido"
         "footer footer";
+
+                                 /* separación */  
 }
 
 header{
     grid-area:header;
+
 }
 aside {
     grid-area: menu;
@@ -27,5 +28,25 @@ footer{
 }
 
 .item{
-    border: 2px solid palevioletred;
+    display: flex;              /*asigna eje principal horizontal*/
+    justify-content: center;    /*centra la posición en el eje*/
+    align-items: center;        /*centra los elementos verticalmente*/
+
+    padding: 20px;             /*Box Model*/
+    border: 20px black;
+    margin: 100px;
+}
+
+/* PANTALLA PEQUEÑA */
+@media (max-width: 1000px) {
+
+    .pagina {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "header"
+            "menu"
+            "contenido"
+            "footer";
+    }
 }
